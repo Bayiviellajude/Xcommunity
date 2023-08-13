@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Community App - Home{% endblock %}
+
+{% block content %}
+    <div class="events-content">
+        <div class="events-card">
+            <img src="{{ url_for('static', filename='1.png') }}" alt="Event 1">
+<!-- Add more event images as needed -->
+
+            <h3>Event 1 Title</h3>
+            <p>Date: June 15, 2023</p>
+            <p>Location: XYZ Hall</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod.</p>
+        </div>
+
+        <div class="events-card">
+            <img src="{{ url_for('static', filename='2.png') }}" alt="Event 2">
+            <h3>Event 2 Title</h3>
+            <p>Date: July 5, 2023</p>
+            <p>Location: ABC Auditorium</p>
+            <p>Description: Ut tristique urna eu elit fermentum, quis efficitur mi interdum.</p>
+        </div>
+
+        <!-- Add more events cards as needed -->
+    </div>
+{% endblock %}

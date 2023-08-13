@@ -1,0 +1,430 @@
+/* static/style.css */
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    background-image: url("14.jpg");
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    height: 100px;
+    color: #ff0000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #129b00;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Add padding to create button-like appearance */
+    border-radius: 5px; /* Add rounded corners to the buttons */
+    transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+}
+
+nav a:hover {
+    background-color: #ff0000; /* Change the background color on hover */
+}
+
+
+/* Content container styles */
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    height: 50px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Home page styles */
+header.hero {
+    height: 100vh;
+    background-image: url("12.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+header.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+header.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #15ff00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features section styles */
+section.features-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Testimonials section styles */
+section.testimonials-section {
+    padding: 50px 0;
+    color: #fff;
+}
+
+.testimonial {
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.testimonial h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+/* Call-to-action section styles */
+section.cta-section {
+    text-align: center;
+    background-color: #ff3c00;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-section .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #51ff00;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Events page styles */
+.events-content {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.events-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px; /* Increase the padding to expand the card size */
+    margin-bottom: 20px; /* Add margin to the bottom to space out the cards */
+    max-width: 500px; /* Increase the maximum width as needed */
+    margin: 0 auto; /* Center the cards horizontally */
+    margin-bottom: 10px;
+}
+
+.events-card img {
+    width: 100%;
+    max-height: 250px; /* Increase the max-height to adjust the image size */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.events-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007767; /* Customize the event title color */
+}
+
+.events-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Forums page styles */
+.forums-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.forum-topic {
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.forum-topic h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007767;
+}
+
+.forum-topic p {
+    font-size: 16px;
+    color: #666;
+}
+
+.forum-topic p:last-child {
+    margin-bottom: 0; /* Remove margin-bottom for the last paragraph in each forum topic */
+}
+
+
+
+/* Groups page styles */
+.groups-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.group-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.group-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.group-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Profile page styles */
+.profile-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007767;
+}
+
+.profile-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.profile-info {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007767;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.profile-groups {
+    margin-top: 40px;
+}
+
+.group-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.group-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.group-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.group-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive design using media queries */
+
+/* Tablets (portrait and landscape) and larger */
+@media screen and (max-width: 1024px) {
+    header {
+        font-size: 32px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Mobile phones (portrait and landscape) */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 28px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
+
+/* Smaller mobile phones (e.g., iPhone SE) */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .container {
+        padding: 2px;
+    }
+}

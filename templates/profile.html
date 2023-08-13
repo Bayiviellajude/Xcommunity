@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Community App - Profile{% endblock %}
+
+{% block content %}
+    <div class="profile-content">
+        <div class="profile-card">
+            <img src="{{ url_for('static', filename='10.png') }}" alt="User Profile">
+            <h3>User's Full Name</h3>
+            <p>Email: user@example.com</p>
+            <p>University: Sample University</p>
+            <p>Major: Computer Science</p>
+            <p>Year: Senior</p>
+            <a href="/edit_profile" class="btn">Edit Profile</a>
+        </div>
+
+        <div class="profile-info">
+            <h2>About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id massa eget arcu maximus tincidunt vel eu purus.
+                Donec viverra, sapien a aliquam dictum, turpis sapien porttitor est, ac rhoncus enim purus nec mi.
+            </p>
+        </div>
+
+        <div class="profile-groups">
+            <h2>Groups</h2>
+            <div class="group-card">
+                <img src="{{ url_for('static', filename='7.png') }}" alt="Group 1">
+                <h3>Group 1</h3>
+                <p>Members: 25</p>
+                <p>Description: A group for computer science enthusiasts.</p>
+            </div>
+            <div class="group-card">
+                <img src="{{ url_for('static', filename='6.png') }}" alt="Group 2">
+                <h3>Group 2</h3>
+                <p>Members: 18</p>
+                <p>Description: A group for photography lovers.</p>
+            </div>
+            <!-- Add more group cards as needed -->
+        </div>
+    </div>
+{% endblock %}
